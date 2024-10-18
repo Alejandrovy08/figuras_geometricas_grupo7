@@ -20,5 +20,8 @@
         public function __toString(){
             return "(" . $this->x . ", " . $this->y . ")";
         }
+
+        public function distancia($punto): float;
+
     }
 ?>
