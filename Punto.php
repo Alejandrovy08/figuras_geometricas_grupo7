@@ -1,7 +1,7 @@
 <?php
     class Punto{
-        private float $x;
-        private float $y;
+        private $x;
+        private $y;
 
         public function __construct($x,$y){
             $this->x = $x;
@@ -16,5 +16,9 @@
             return $this->y;
         }
 
+        //Funcion para sacar en string la x y la y
+        public function __toString(){
+            return "(" . $this->x . ", " . $this->y . ")";
+        }
     }
 ?>
