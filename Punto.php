@@ -21,7 +21,10 @@
             return "(" . $this->x . ", " . $this->y . ")";
         }
 
-        public function distancia($punto): float;
+        public function distancia($punto): float {
+            // raíz cuadrada con sqrt y potencia con pow
+            return sqrt(pow($punto->getX() - $this->x, 2) + pow($punto->getY() - $this->y, 2));
+        }
 
     }
 ?>
