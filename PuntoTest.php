@@ -34,5 +34,4 @@ $punto2 = new Punto(6, 8);
 $expectedDistancia = 5.0; // Distancia entre (3,4) y (6,8)
 $actualDistancia = $punto1->distancia($punto2);
 assertEquals($expectedDistancia, $actualDistancia, "Prueba de cálculo de distancia");
-
 ?>
